@@ -1,0 +1,7 @@
+activemq,camel,derby,geronimo,hcommon,hbase,mahout,openjpa,pig,tuscany
+nd,nd,nd,nd,nd,nd,nd,nd,nd,nd
+entropy,entropy,entropy,entropy,entropy,entropy,entropy,entropy,entropy,entropy
+nuc,nuc,rexp,rexp,nuc,rexp,rexp,rexp,nuc,rexp
+rexp,rexp,sexp,fix,rexp,fix,fix,fix,rexp,fix
+fix,fix,fix,,fix,,,,sexp,
+,,,,,,,,fix,
