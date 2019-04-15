@@ -1,7 +1,7 @@
 # SZZ-TSE
 This repository proposes the supplementary materials for our paper - The Impact of Changes Mislabeled by SZZ on Just-in-Time Defect Prediction.
 
-## How to run?
+## How to run
 * Clone the code to a directory
 * Modify a line in the file `code/calculation/classification_importance.R`, the line is as follows:
 ```
