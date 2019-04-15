@@ -1,6 +1,4 @@
 
-source("../packages/measures.R")
-
 
 one_way <- function(train_data, test_data, varnames, train_label, label, type){
 	mean_scores <- c()
