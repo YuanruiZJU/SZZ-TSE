@@ -13,4 +13,4 @@ DIR_PATH = ""
 * Run the script `code/calculation/classification_importance.R`
 
 ## Results
-The results will be stored in `data_results/importance/`, `data_results/oneway/`,  `data_results/results_imbalance/`, `data_results/results_balance/` after running the script.
+The results will be stored in `data_results/importance/`, `data_results/oneway/`,  `data_results/results_imbalance/`, `data_results/results_balance/` after running the script. We store the performance scores (e.g., auc) in each of the 1,000 bootstrap iterations into csv files.
