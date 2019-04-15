@@ -9,6 +9,7 @@ This repository proposes the supplementary materials for our paper - The Impact 
 # DIR_PATH = "?"
 DIR_PATH = "" 
 ```
+* Create the following directories in `data_results/`: `importance`, `oneway`, `results_imbalance`, `results_balance`.
 * Run the script `code/calculation/classification_importance.R`
 
 ## Results
