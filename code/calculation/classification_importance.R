@@ -8,9 +8,8 @@ library("caret")
 library("pracma")
 library("PRROC")
 
-# Specify the DIRECTORY path storing the project
-# DIR_PATH = "?"
-DIR_PATH = "" 
+# Specify the DIRECTORY path storing the code of this repository
+DIR_PATH = "?" 
 
 setwd(DIR_PATH)
 
@@ -20,8 +19,7 @@ source("code/packages/CBS.R")
 source("code/packages/VarImportance.R")
 source("code/packages/one-way.R")
 
-# Sepcify the path of szz_investigation directory
-# root_path <- "?"
+# This path is used to store result data
 root_path <- "data_results/"
 
 
@@ -38,8 +36,8 @@ classifiers <- c("naive_bayes", "logistic_regression", "random_forest")
 
 study_methods <- c("imbalance", "balance", "oneway")
 
-calculated_measures <- c("auc", "precision", "recall", "f1measure", "gmean", "recall20", "fp", "fn", "waste_effort")
-calculated_measures2 <- c("auc", "precision", "recall", "f1measure", "gmean", "recall20", "fp", "fn", "waste_effort")
+calculated_measures <- c("auc", "precision", "recall", "f1measure", "gmean", "recall20", "fp", "fn", "waste_effort", "all_effort")
+calculated_measures2 <- c("auc", "precision", "recall", "f1measure", "gmean", "recall20", "fp", "fn", "waste_effort", "all_effort")
 calculated_measures3 <- c("oneway_r20")
 
 store_result_to_frame<-function(result_frame, scores_vector){
@@ -102,6 +100,7 @@ for (method in study_methods){
 				fp_scores <- c()
 				fn_scores <- c()
 				waste_lines_scores <- c()
+				all_lines_scores <- c()
 				
 				importance_matrix <- NULL
 
@@ -191,7 +190,8 @@ for (method in study_methods){
 					waste_miss_results <- waste_miss(test_data, prob, szz_baseline)
 					fp_scores <- append(fp_scores, waste_miss_results[1])
 					fn_scores <- append(fn_scores, waste_miss_results[2])
-					waste_lines_scores <- append(waste_lines_scores, waste_miss_results[3])			
+					waste_lines_scores <- append(waste_lines_scores, waste_miss_results[3])
+                    all_lines_scores <- append(all_lines_scores, waste_miss_results[4])					
 				}
 
 				if (method == "imbalance"){
@@ -232,10 +232,11 @@ for (method in study_methods){
 					# store recall20
 					result_frame <- store_result_to_frame(result_frame, recall20_scores)
 					
-					# store waste and misses
+					# store false positive, false negative, waste effort and overall effort
 					result_frame <- store_result_to_frame(result_frame, fp_scores)
 					result_frame <- store_result_to_frame(result_frame, fn_scores)
 					result_frame <- store_result_to_frame(result_frame, waste_lines_scores)
+					result_frame <- store_result_to_frame(result_frame, all_lines_scores)
 				}
 
 				if (method == "oneway"){
