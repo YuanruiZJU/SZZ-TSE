@@ -2,12 +2,11 @@
 This repository proposes the datasets and code for reproducing our paper - The Impact of Mislabeled Changes by SZZ on Just-in-Time Defect Prediction.
 
 ## How to run
-* Clone the code to a directory
+* Clone the code to a directory. Running our code needs the path of the directory.
 * Modify a line in the file `code/calculation/classification_importance.R`, the line is as follows:
 ```
-# Specify the Directory of the path storing the project
-# DIR_PATH = "?"
-DIR_PATH = "" 
+# Specify the DIRECTORY path storing the code of this repository
+DIR_PATH = "?" 
 ```
 * Create the following directories in `data_results/`: `importance`, `oneway`, `results_imbalance`, `results_balance`.
 * Run the script `code/calculation/classification_importance.R`
