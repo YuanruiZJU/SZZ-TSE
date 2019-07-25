@@ -1,6 +1,11 @@
 # SZZ-TSE
 This repository proposes the datasets and code for reproducing our paper - The Impact of Mislabeled Changes by SZZ on Just-in-Time Defect Prediction.
 
+# Data Labelling
+Our data is labeled using Daniel's implementaiton of B-SZZ, AG-SZZ, MA-SZZ and RA-SZZ. See the following repositories:
+[B-SZZ, AG-SZZ, MA-SZZ](https://github.com/danielcalencar/ma-szz)
+[RA-SZZ](https://github.com/danielcalencar/ra-szz)
+
 ## How to run
 * Clone the code to a directory. Running our code needs the path of the directory.
 * Modify a line in the file `code/calculation/classification_importance.R`, the line is as follows:
