@@ -5,9 +5,9 @@ This repository proposes the datasets and code for reproducing our paper - The I
 # Data Labelling
 Our data is labeled using Daniel's implementaiton of B-SZZ, AG-SZZ, MA-SZZ and RA-SZZ. See the following repositories:
 
-- [B-SZZ, AG-SZZ, MA-SZZ](https://github.com/danielcalencar/ma-szz)
+- Repository for B-SZZ, AG-SZZ, MA-SZZ: https://github.com/danielcalencar/ma-szz
 
-- [RA-SZZ](https://github.com/danielcalencar/ra-szz)
+- Repository for RA-SZZ: https://github.com/danielcalencar/ra-szz
 
 ## How to run
 * Clone the code to a directory. Running our code needs the path of the directory.
