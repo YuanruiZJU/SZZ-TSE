@@ -26,16 +26,13 @@ The results will be stored in `data_results/importance/`, `data_results/oneway/`
 If you find our code useful for your research, please cite:
 
 ```
-@ARTICLE{fan2019impact, 
+@article{fan2019impact, 
 author={Y. {Fan} and X. {Xia} and D. {Alencar da Costa} and D. {Lo} and A. E. {Hassan} and S. {Li}}, 
 journal={IEEE Transactions on Software Engineering}, 
 title={The Impact of Changes Mislabeled by SZZ on Just-in-Time Defect Prediction}, 
 year={2019}, 
-volume={}, 
-number={}, 
 pages={1-1}, 
 keywords={Just-in-Time Defect Prediction;SZZ;Noisy Data;Mining Software Repositories}, 
-doi={10.1109/TSE.2019.2929761}, 
-ISSN={0098-5589}, 
-month={},}
+doi={10.1109/TSE.2019.2929761}
+}
 ```
