@@ -1,4 +1,4 @@
-# Code and Dataset for Our Paper: The Impact of Mislabeled Changes by SZZ on Just-in-Time Defect Prediction
+# Code and Dataset: The Impact of Mislabeled Changes by SZZ on Just-in-Time Defect Prediction
 
 This repository proposes the datasets and code for reproducing our paper - The Impact of Mislabeled Changes by SZZ on Just-in-Time Defect Prediction.
 
