@@ -1,6 +1,6 @@
 # The Impact of Mislabeled Changes by SZZ on Just-in-Time Defect Prediction (Code and Data)
 
-This repository proposes the datasets and code for reproducing our paper - The Impact of Mislabeled Changes by SZZ on Just-in-Time Defect Prediction.
+This repository provides the datasets and code for reproducing our paper - The Impact of Mislabeled Changes by SZZ on Just-in-Time Defect Prediction.
 
 # Data Labelling
 Our data is labeled using Daniel's implementaiton of B-SZZ, AG-SZZ, MA-SZZ and RA-SZZ. See the following repositories:
