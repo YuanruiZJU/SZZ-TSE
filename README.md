@@ -7,7 +7,7 @@ Our data is labeled using Daniel's implementaiton of B-SZZ, AG-SZZ, MA-SZZ and R
 
 - Repository for B-SZZ, AG-SZZ, MA-SZZ: https://github.com/danielcalencar/ma-szz
 
-- Repository for RA-SZZ: https://github.com/danielcalencar/ra-szz
+- Repository for RA-SZZ: https://github.com/danielcalencar/raszzprime
 
 ## How to run
 * Clone the code to a directory. Running our code needs the path of the directory.
