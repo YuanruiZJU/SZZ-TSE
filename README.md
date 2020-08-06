@@ -9,6 +9,9 @@ Our data is labeled using Daniel's implementaiton of B-SZZ, AG-SZZ, MA-SZZ and R
 
 - Repository for RA-SZZ: https://github.com/danielcalencar/raszzprime
 
+- the file `labeled_data.zip` is calculated for all the apache projects using b-szz, ag-szz, ma-szz and ra-szz. 
+  All the id are the CVS id of the commit. The CSV id can be retrieved from the commit message of each commit.
+
 ## How to run
 * Clone the code to a directory. Running our code needs the path of the directory.
 * Modify a line in the file `code/calculation/classification_importance.R`, the line is as follows:
